@@ -10,7 +10,7 @@ python selfplay.py \
        --method iql \
        --num_thread 10 \
        --num_game_per_thread 80 \
-       --sad 1 \
+       --sad 0 \
        --act_base_eps 0.1 \
        --act_eps_alpha 7 \
        --lr 6.25e-05 \
@@ -28,5 +28,5 @@ python selfplay.py \
        --eval_bomb 0 \
        --num_player 2 \
        --rnn_hid_dim 512 \
-       --act_device cuda:0 \
-       --shuffle_color 1 \
+       --act_device cpu:0 \
+       --shuffle_color 0 \

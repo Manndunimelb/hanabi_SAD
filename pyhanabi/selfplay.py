@@ -50,7 +50,7 @@ def parse_args():
     parser.add_argument("--num_lstm_layer", type=int, default=2)
     parser.add_argument("--rnn_hid_dim", type=int, default=512)
 
-    parser.add_argument("--train_device", type=str, default="cuda:0")
+    parser.add_argument("--train_device", type=str, default="cpu:0")
     parser.add_argument("--batchsize", type=int, default=128)
     parser.add_argument("--num_epoch", type=int, default=5000)
     parser.add_argument("--epoch_len", type=int, default=1000)
@@ -78,7 +78,7 @@ def parse_args():
     # actor setting
     parser.add_argument("--act_base_eps", type=float, default=0.4)
     parser.add_argument("--act_eps_alpha", type=float, default=7)
-    parser.add_argument("--act_device", type=str, default="cuda:1")
+    parser.add_argument("--act_device", type=str, default="cpu:0")
     parser.add_argument("--actor_sync_freq", type=int, default=10)
 
     args = parser.parse_args()
